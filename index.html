@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="style.css">
+   
+   
+</head>
+<body>
+<h1 style="text-align: center;"> This is My Scientific Calculator</h1>
+
+    <div id="calculator">
+        <div id="output"></div>
+        <div>
+            <button class="btn" onclick="appendToOutput('7')">7</button>
+            <button class="btn" onclick="appendToOutput('8')">8</button>
+            <button class="btn" onclick="appendToOutput('9')">9</button>
+            <button class="btn" onclick="appendToOutput('/')">/</button>
+        </div>
+        <div>
+            <button class="btn" onclick="appendToOutput('4')">4</button>
+            <button class="btn" onclick="appendToOutput('5')">5</button>
+            <button class="btn" onclick="appendToOutput('6')">6</button>
+            <button class="btn" onclick="appendToOutput('*')">*</button>
+        </div>
+        <div>
+            <button class="btn" onclick="appendToOutput('1')">1</button>
+            <button class="btn" onclick="appendToOutput('2')">2</button>
+            <button class="btn" onclick="appendToOutput('3')">3</button>
+            <button class="btn" onclick="appendToOutput('-')">-</button>
+        </div>
+        <div>
+            <button class="btn" onclick="appendToOutput('0')">0</button>
+            <button class="btn" onclick="appendToOutput('.')">.</button>
+            <button class="btn" onclick="calculate()">=</button>
+            <button class="btn" onclick="appendToOutput('+')">+</button>
+        </div>
+        <div>
+            <button class="btn" onclick="clearOutput()">C</button>
+            <button class="btn" onclick="backspace()">←</button>
+            <button class="btn" onclick="appendToOutput('Math.sqrt(')">√</button>
+            <button class="btn" onclick="appendToOutput('Math.pow(')">^</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
